@@ -4,7 +4,7 @@
 This project demonstrates a simulated environment for analyzing vulnerabilities in legacy Modbus RTU-based smart meters. It simulates communication with Modbus RTU devices, enabling data manipulation in a controlled, research-focused environment. This project is intended for **cybersecurity research, educational purposes, and controlled testing environments only**.
 
 ## Purpose
-The goal of this project is to study potential vulnerabilities in legacy smart meters deployed from 2018 to 2020, which often lack advanced security measures like secure boot, encrypted firmware, or secure firmware updates. Analyzing these vulnerabilities in a controlled environment can contribute to identifying and mitigating risks within critical infrastructure.
+The goal of this project is to study potential vulnerabilities in legacy smart meters, which often lack basic security measures such as encryption and signing of firmware updates & firmware encryption.
 
 ## Features
 - Establishes simulated Modbus RTU communication with legacy smart meters.
@@ -25,20 +25,12 @@ This code is **intended for research and educational use** only. Do not use this
 
 ## Usage Instructions
 1. **Setup**: Install necessary dependencies for serial communication on Windows.
-2. **Compile**: Compile the project using Visual Studio or a compatible C++ compiler.
+2. **Compile**: Compile the project using Visual Studio or a compatible C/C++ compiler.
 3. **Simulated Environment Only**: Run this code strictly in a simulation environment.
-4. **Configure COM Port**: Update the COM port (`L"COM3"`) to match your local setup for serial communication.
+4. **Configure COM Port**: Update the COM port (`L"COM3"`) to match your local setup for slave communication.
 
 ## Code Overview
 - `GetSerialHandle`: Initializes and configures the serial port for communication.
-- `CRC16`: Calculates CRC16 checksums for the Modbus frame to maintain data integrity.
+- `CRC16`: Calculates CRC16 checksums for the Modbus frame.
 - `manipulate`: Demonstrates manipulation of simulated meter data.
 - `main`: Runs a loop to communicate with the simulated device, modifying and re-sending altered data.
-
-## Disclaimer
-This code is intended solely for educational and research purposes in controlled environments. Unauthorized use of this code outside of simulated environments may be illegal and could violate local or international laws. The authors and contributors are not responsible for any misuse or damage caused by this code. Please conduct all testing and research responsibly and in accordance to applicable legal and ethical guidelines.
-
-## References and Further Reading
-- [Modbus Protocol Specifications](https://modbus.org/)
-- [Smart Meter Security Overview - Fornetix](https://www.fornetix.com/)
-- [IEC and IEEE Standards for Smart Meter Security - IEEE](https://ieeexplore.ieee.org/)
