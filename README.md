@@ -12,9 +12,6 @@ The goal of this project is to study potential vulnerabilities in legacy smart m
 - Calculates and appends CRC16 checksums to Modbus frames.
 - Provides insight into how unprotected devices could be manipulated in real-world scenarios.
 
-## Important Note
-This code is **intended for research and educational use** only. Do not use this code for unauthorized access, manipulation of real-world devices, or any activities outside ethical, simulated environments.
-
 ## Disclaimer
 > **DISCLAIMER**: This project is intended solely for educational and research purposes. Unauthorized use of this code against real devices or networks is prohibited and may violate local and international laws. The authors and contributors are not responsible for any misuse or damage caused by this code outside the intended research context. All testing should be conducted in controlled, simulated environments.
 
