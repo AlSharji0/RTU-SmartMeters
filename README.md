@@ -1,4 +1,4 @@
-# Smart Meter Simulation - Modbus RTU Manipulation Research
+# Malware Exploits in Unprotected Smart Meters with RTU Communication and Impact Analysis
 
 ## Description
 This project demonstrates a simulated environment for analyzing vulnerabilities in legacy Modbus RTU-based smart meters. It simulates communication with Modbus RTU devices, enabling data manipulation in a controlled, research-focused environment. This project is intended for **cybersecurity research, educational purposes, and controlled testing environments only**.
